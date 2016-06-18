@@ -1,2 +1,4 @@
 # icon-pure-css
-pure css icon
+icons created in pure CSS.
+
+
