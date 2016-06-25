@@ -16,3 +16,23 @@
 	-ms-transform: translate(.9em,.8em) rotate(41deg);
 	transform: translate(.9em,.8em) rotate(41deg);
 }
+.checkbox {
+	width: 14px;
+    height: 14px;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+}
+.checkbox:after{
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    border-style:solid;
+    border-width: 0 2px 2px 0;
+    border-color: #2b6ab8;
+    -moz-transform: translate(30%,-30%) rotateZ(26deg);
+	-o-transform: translate(30%,-30%) rotateZ(26deg);
+	-ms-transform: translate(30%,-30%) rotateZ(26deg);
+    -webkit-transform: translate(30%,-30%) rotateZ(26deg);
+    transform: translate(30%,-30%) rotateZ(26deg);
+    content:'';
+}
