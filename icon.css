@@ -17,6 +17,7 @@
 	transform: translate(.9em,.8em) rotate(41deg);
 }
 .checkbox {
+	position: relative;
 	width: 14px;
     height: 14px;
     border: 1px solid #a0a0a0;
@@ -36,3 +37,15 @@
     transform: translate(30%,-30%) rotateZ(26deg);
     content:'';
 }
+.close{
+	position: relative;
+}
+.close:before,.close:after{
+	position: absolute;
+	content: '';
+	width: 14px;
+	height: 0;
+	border:1px solid #000;
+}
+.close:before { transform: rotate(45deg);}
+.close:after { transform: rotate(-45deg);}
