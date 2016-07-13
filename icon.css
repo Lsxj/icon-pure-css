@@ -1,3 +1,8 @@
+.container>div{
+	width: 20px;
+	height: 20px;
+	margin: 20px;
+}
 .magnifying_glass {
 	width: 1em;
 	height: 1em;
@@ -47,5 +52,55 @@
 	height: 0;
 	border:1px solid #000;
 }
-.close:before { transform: rotate(45deg);}
-.close:after { transform: rotate(-45deg);}
+.close:before { 
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	transform: rotate(45deg);
+}
+.close:after { 
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.arrow {
+	position: relative;
+}
+.arrow:before, .arrow:after {
+	position: absolute;
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #000;
+	border-right: 2px solid #000;
+}
+.arrow-down:before { margin-left: 3px; }
+.arrow-down:after {
+	width: 14px;
+    height: 14px;
+}
+.arrow-down:before, .arrow-down:after { 
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+.arrow-up:before, .arrow-up:after { 
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.arrow-up:before { 
+	width: 14px;
+    height: 14px;
+}
+.arrow-up:after { 
+	margin-top: 8px;
+	margin-left: 3px;
+	}
